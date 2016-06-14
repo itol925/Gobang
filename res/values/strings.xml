@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gobang</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_start">五子棋</string>
+    <string name="dummy_button">退出游戏</string>
+    <string name="dummy_content">潘颖龙．巨人网络面试作品\n</string>
+    <string name="ai_btn_des">人机对战</string>
+    <string name="palyer_btn_des">人机对战</string>
+    <string name="backStart">返回</string>
+    
+    <string name="str_ai_group">\n选择AI的难度：</string>
+    <string name="str_esay">简 单</string>
+    <string name="str_medium">中 等</string>
+    <string name="str_crazy">疯 狂</string>
+    
+    <string name="str_ai_setColor">\n选择你的阵营：</string>
+    <string name="str_color_black">黑棋</string>
+    <string name="str_color_white">白棋</string>
+    
+    <string name="str_ai_chessboard">\n选择你的棋盘：</string>
+    <string name="str_9x9">9行  x 9列</string>
+    <string name="str_12x12">12行  x 12列</string>
+    <string name="str_15x15">15行  x 15列</string>
+    
+    <string name="str_vs">VS</string>
+</resources>

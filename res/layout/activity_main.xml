@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ditu_main"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/testTv"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <RelativeLayout
+	    android:id="@+id/playersInfo"
+		android:layout_centerHorizontal="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/testTv" >
+	    
+        <!-- black player info -->
+        <RelativeLayout
+		    android:id="@+id/playerBlackInfo"
+			android:layout_alignParentLeft="true"
+		    android:layout_width="80dp"
+		    android:layout_height="100dp">
+		    
+		    <ImageView 
+		        android:id="@+id/playerBlackHead"
+		        android:src="@drawable/player"
+				android:contentDescription="@string/hello_world"
+		        android:layout_width="80dp" 
+		        android:layout_height="80dp">
+		    </ImageView>  
+		 <TextView
+		    android:id="@+id/playerBlackName"
+	        android:textColor="#000000"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+		    android:layout_below="@id/playerBlackHead"
+		    android:gravity="center"/>
+		</RelativeLayout>
+		
+	    <ImageView 
+		android:layout_centerInParent="true"
+	        android:src="@drawable/vs"
+			android:contentDescription="@string/hello_world"
+	        android:layout_width="40dp" 
+	        android:layout_height="60dp">
+	    </ImageView>  
+	 
+		 <!-- white player info -->
+		<RelativeLayout
+		    android:id="@+id/playerWhiteInfo"
+			android:layout_alignParentRight="true"
+		    android:layout_width="80dp"
+		    android:layout_height="100dp">
+		    
+		    <ImageView 
+		        android:id="@+id/playerWhiteHead"
+		        android:src="@drawable/player2"
+				android:contentDescription="@string/hello_world"
+		        android:layout_width="80dp" 
+		        android:layout_height="80dp">
+		    </ImageView>  
+			 <TextView
+			    android:id="@+id/playerWhiteName"
+		        android:textColor="#000000"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/playerWhiteHead"
+		        android:gravity="center"/>
+		</RelativeLayout>
+        
+	</RelativeLayout>
+    
+    <guet.pyl.gobang.MyView 
+        android:id="@+id/mv_chessboard"
+	    android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+		android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp" />
+
+	<RelativeLayout
+	    android:id="@+id/rl_btns"
+		android:layout_centerHorizontal="true"
+	    android:layout_width="240dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/mv_chessboard" >
+
+		 <ImageButton
+		    android:id="@+id/btn_ReStart"
+			android:layout_marginTop="10dp"
+			android:layout_alignParentLeft="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:contentDescription="@string/ai_btn_des"
+			android:background="@drawable/restart_bg"/>
+		 <ImageButton
+		    android:id="@+id/btn_backToMenu"
+			android:layout_marginTop="10dp" 
+			android:layout_alignParentRight="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:contentDescription="@string/ai_btn_des"
+			android:background="@drawable/backtomenu_bg"/>
+	</RelativeLayout>
+    <TextView
+        android:textColor="#333333"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_content" />
+</RelativeLayout>

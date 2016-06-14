@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ditu_main" >
+    
+     <ImageView 
+		        android:id="@+id/iv_options"
+		android:layout_centerHorizontal="true"
+		        android:layout_marginTop="40dp"
+		        android:src="@drawable/options"
+				android:contentDescription="@string/hello_world"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content">
+	</ImageView>  
+    <TextView  
+        android:id = "@+id/tv_setDifficult"
+		android:layout_centerHorizontal="true"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/str_ai_group"
+	    android:layout_below="@+id/iv_options"
+	    android:textColor="#000000"
+	    />
+	<RadioGroup 
+	    android:id="@+id/ai_radioGroup" 
+	    android:layout_below="@id/tv_setDifficult"
+	    android:contentDescription="@string/str_ai_group"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true">
+	    
+	   <RadioButton
+	       android:id="@+id/rb_esay"
+	       android:layout_width="116dp"
+	       android:layout_height="30dp"
+	       android:checked="false"
+	       android:text="@string/str_esay"
+	       android:textColor="#000000" >
+
+	   </RadioButton>
+	   <RadioButton 
+	       android:id="@+id/rb_medium" 
+	       android:layout_width="wrap_content" 
+	       android:layout_height="30dp" 
+	       android:text="@string/str_medium" 
+	       android:textColor="#000000"
+	       android:checked="false">
+	   </RadioButton>  
+	   <RadioButton 
+	       android:id="@+id/rb_crazy" 
+	       android:layout_width="wrap_content" 
+	       android:layout_height="30dp" 
+	       android:text="@string/str_crazy" 
+	       android:textColor="#000000"
+	       android:checked="true">
+	   </RadioButton>  
+	     
+	</RadioGroup>
+    
+	
+    <TextView
+        android:id = "@+id/tv_setColor"
+	    android:layout_below="@id/ai_radioGroup"
+		android:layout_centerHorizontal="true"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:textColor="#000000"
+	    android:text="@string/str_ai_setColor"/> 
+	<RadioGroup 
+	    android:id="@+id/ai_radioGroup_color" 
+	    android:layout_below="@id/tv_setColor"
+	    android:contentDescription="@string/str_ai_setColor"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true">
+	    
+	   <RadioButton
+	       android:id="@+id/rb_black"
+	       android:layout_width="116dp"
+	       android:layout_height="30dp"
+	       android:checked="true"
+	       android:text="@string/str_color_black"
+	       android:textColor="#000000" >
+	   </RadioButton>
+	   <RadioButton 
+	       android:id="@+id/rb_white" 
+	       android:layout_width="wrap_content" 
+	       android:layout_height="30dp" 
+	       android:text="@string/str_color_white" 
+	       android:textColor="#000000"
+	       android:checked="false">
+	   </RadioButton>  
+	</RadioGroup>
+	<TextView
+        android:id = "@+id/tv_setChessboard"
+	    android:layout_below="@id/ai_radioGroup_color"
+		android:layout_centerHorizontal="true"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:textColor="#000000"
+	    android:text="@string/str_ai_chessboard"/> 
+	<RadioGroup 
+	    android:id="@+id/ai_radioGroup_chessboard" 
+	    android:layout_below="@id/tv_setChessboard"
+	    android:contentDescription="@string/str_ai_chessboard"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true">
+	    
+	   <RadioButton
+	       android:id="@+id/rb_9x9"
+	       android:layout_width="116dp"
+	       android:layout_height="30dp"
+	       android:checked="false"
+	       android:text="@string/str_9x9"
+	       android:textColor="#000000" >
+	   </RadioButton>
+	   <RadioButton 
+	       android:id="@+id/rb_12x12" 
+	       android:layout_width="wrap_content" 
+	       android:layout_height="30dp" 
+	       android:text="@string/str_12x12" 
+	       android:textColor="#000000"
+	       android:checked="true">
+	   </RadioButton>  
+	   <RadioButton 
+	       android:id="@+id/rb_15x15" 
+	       android:layout_width="wrap_content" 
+	       android:layout_height="30dp" 
+	       android:text="@string/str_15x15" 
+	       android:textColor="#000000"
+	       android:checked="false">
+	   </RadioButton>  
+	</RadioGroup>
+	<RelativeLayout
+	    android:id="@+id/rl_btns2"
+		android:layout_centerHorizontal="true"
+	    android:layout_width="240dp"
+	    android:layout_height="wrap_content"
+		android:layout_marginTop="25dp" 
+	    android:layout_below="@id/ai_radioGroup_chessboard" >
+	   
+		 <ImageButton
+		     android:id="@+id/btn_ai_StartGame"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentRight="true"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+			android:contentDescription="@string/ai_btn_des"
+			android:background="@drawable/set_start_bg"/>
+		 <ImageButton
+		     android:id="@+id/btn_ai_backToStart"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentLeft="true"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+			android:contentDescription="@string/ai_btn_des"
+			android:background="@drawable/set_back_bg"/>
+	</RelativeLayout>
+</RelativeLayout>
